@@ -3,6 +3,7 @@ var network = NetworkedMultiplayerENet.new() #Create a new multiplayer network
 var port = 25565 #Port used for connexion
 var max_players = 2 #Maximum players allowed
 
+var rng = RandomNumberGenerator.new()
 
 func _ready(): #When the scene is ready
 	StartServer()
@@ -25,3 +26,9 @@ func _Peer_Connected(player_id): #Upon player is connected
 
 func _Peer_Disconnected(player_id): #Upon player is disconnected
 	print("User " + str(player_id) + " Disconnected.")
+
+remote func FetchCardEffect(card_id, requester):
+	var player_id = get_tree().get_rpc_sender_id()
+	var effect = ServerData.deck_data.deck[card_id].display
+	rpc_id(player_id, "ReturnEffect", effect, requester)
+	print("sending " + effect + " to player")

@@ -8,9 +8,38 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "TextureButton",
+"class": "Card",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Deck/Cards/Card.gd"
+}, {
+"base": "Card",
+"class": "Card_Convert",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Convert.gd"
+}, {
+"base": "Card",
+"class": "Card_Kill",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Kill.gd"
+}, {
+"base": "Card",
+"class": "Card_Threat",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Threat.gd"
+}, {
+"base": "Node",
+"class": "Deck",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Deck/Deck.gd"
+} ]
 _global_script_class_icons={
-
+"Card": "",
+"Card_Convert": "",
+"Card_Kill": "",
+"Card_Threat": "",
+"Deck": ""
 }
 
 [application]
@@ -18,6 +47,10 @@ _global_script_class_icons={
 config/name="Server"
 run/main_scene="res://Scenes/Main/Server.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ServerData="*res://Scenes/Singletons/ServerData.gd"
 
 [rendering]
 
