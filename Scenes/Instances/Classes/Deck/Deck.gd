@@ -3,6 +3,7 @@ extends Node
 class_name Deck
 
 var deck = []
+var discard = []
 
 
 # Called when the node enters the scene tree for the first time.
@@ -28,5 +29,4 @@ func _init():
 			if type == "threat":
 				deck.append(Card_Threat.new(id, cards[type]))
 			id = id + 1
-	for card in deck:
-		print(str(card.id) + " " + card.display)
+	print(str(deck.size()) + " cards generated from json")

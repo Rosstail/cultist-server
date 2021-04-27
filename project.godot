@@ -33,13 +33,25 @@ _global_script_classes=[ {
 "class": "Deck",
 "language": "GDScript",
 "path": "res://Scenes/Instances/Classes/Deck/Deck.gd"
+}, {
+"base": "Node",
+"class": "Village",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Village/Village.gd"
+}, {
+"base": "Node",
+"class": "Villager",
+"language": "GDScript",
+"path": "res://Scenes/Instances/Classes/Village/Villager.gd"
 } ]
 _global_script_class_icons={
 "Card": "",
 "Card_Convert": "",
 "Card_Kill": "",
 "Card_Threat": "",
-"Deck": ""
+"Deck": "",
+"Village": "",
+"Villager": ""
 }
 
 [application]
@@ -51,6 +63,7 @@ config/icon="res://icon.png"
 [autoload]
 
 ServerData="*res://Scenes/Singletons/ServerData.gd"
+Actions="*res://Scripts/Actions.gd"
 
 [rendering]
 

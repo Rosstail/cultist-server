@@ -29,6 +29,5 @@ func _Peer_Disconnected(player_id): #Upon player is disconnected
 
 remote func FetchCardEffect(card_id, requester):
 	var player_id = get_tree().get_rpc_sender_id()
-	var effect = ServerData.deck_data.deck[card_id].display
+	var effect = Actions.FetchCardEffect(card_id)
 	rpc_id(player_id, "ReturnEffect", effect, requester)
-	print("sending " + effect + " to player")
