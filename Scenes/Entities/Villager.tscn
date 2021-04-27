@@ -1,0 +1,49 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Walk_4.png" type="Texture" id=1]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Idle_3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Walk_2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Idle_1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Walk_1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Idle_4.png" type="Texture" id=6]
+[ext_resource path="res://Assets/misc/bubble.png" type="Texture" id=7]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Idle_2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/entities/villager_sprite/Villager_Walk_3.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Instances/Classes/Village/Villager.gd" type="Script" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="Villager" type="KinematicBody2D"]
+input_pickable = true
+script = ExtResource( 10 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "idle"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.210224, 6.30672 )
+shape = SubResource( 2 )
+
+[node name="bubble" type="Sprite" parent="."]
+visible = false
+position = Vector2( 60.8068, 40.6917 )
+scale = Vector2( 0.07, 0.05 )
+texture = ExtResource( 7 )
+offset = Vector2( -700, -900 )
+[connection signal="input_event" from="." to="." method="_on_Town_folk_man_input_event"]

@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="House" type="Area2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, 75, 150, 0, 0, -75, -150, 0 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 10, -90 )
+scale = Vector2( 0.9, 0.7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}

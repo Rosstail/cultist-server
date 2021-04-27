@@ -1,0 +1,804 @@
+[gd_resource type="TileSet" load_steps=65 format=2]
+
+[ext_resource path="res://Assets/tileset/Guardhouse_02.png" type="Texture" id=1]
+[ext_resource path="res://Assets/tileset/SmallBarn_02.png" type="Texture" id=2]
+[ext_resource path="res://Assets/tileset/LakeHouse_01.png" type="Texture" id=3]
+[ext_resource path="res://Assets/tileset/Mansion_02.png" type="Texture" id=4]
+[ext_resource path="res://Assets/tileset/SmallHouse_01.png" type="Texture" id=5]
+[ext_resource path="res://Assets/tileset/SmallMansion_01.png" type="Texture" id=6]
+[ext_resource path="res://Assets/tileset/StitHouse1_01.png" type="Texture" id=7]
+[ext_resource path="res://Assets/tileset/StitHouse2_01.png" type="Texture" id=8]
+[ext_resource path="res://Assets/tileset/WindMill_01.png" type="Texture" id=9]
+[ext_resource path="res://Assets/tileset/WindMill_02.png" type="Texture" id=10]
+[ext_resource path="res://Assets/tileset/Shed_02.png" type="Texture" id=11]
+[ext_resource path="res://Assets/tileset/OutHouse_01.png" type="Texture" id=12]
+[ext_resource path="res://Assets/tileset/StitHouse2_02.png" type="Texture" id=13]
+[ext_resource path="res://Assets/tileset/StitHouse1_02.png" type="Texture" id=14]
+[ext_resource path="res://Assets/tileset/HalfTimberedHouse_01.png" type="Texture" id=15]
+[ext_resource path="res://Assets/tileset/OutHouse_02.png" type="Texture" id=16]
+[ext_resource path="res://Assets/tileset/Guardhouse_04.png" type="Texture" id=17]
+[ext_resource path="res://Assets/tileset/SmallHouse_02.png" type="Texture" id=18]
+[ext_resource path="res://Assets/tileset/HalfTimberedHouse_02.png" type="Texture" id=19]
+[ext_resource path="res://Assets/tileset/SmallMansion_02.png" type="Texture" id=20]
+[ext_resource path="res://Assets/tileset/LakeHouse_02.png" type="Texture" id=21]
+[ext_resource path="res://Assets/tileset/Barn_01.png" type="Texture" id=22]
+[ext_resource path="res://Assets/tileset/Manor_02.png" type="Texture" id=23]
+[ext_resource path="res://Assets/tileset/Well_02.png" type="Texture" id=24]
+[ext_resource path="res://Assets/tileset/Mansion_01.png" type="Texture" id=25]
+[ext_resource path="res://Assets/tileset/Manor_01.png" type="Texture" id=26]
+[ext_resource path="res://Assets/tileset/Barn_02.png" type="Texture" id=27]
+[ext_resource path="res://Assets/tileset/Guardhouse_01.png" type="Texture" id=28]
+[ext_resource path="res://Assets/tileset/Guardhouse_03.png" type="Texture" id=29]
+[ext_resource path="res://Assets/tileset/SmallBarn_01.png" type="Texture" id=30]
+[ext_resource path="res://Assets/tileset/Well_01.png" type="Texture" id=31]
+[ext_resource path="res://Assets/tileset/Shed_01.png" type="Texture" id=32]
+
+[sub_resource type="ConcavePolygonShape2D" id=1]
+segments = PoolVector2Array( 66, 188, 339, 141, 339, 141, 357, 330, 357, 330, 278, 332, 278, 332, 196, 381, 196, 381, 73, 296, 73, 296, 66, 188 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 34, 252, 65, 210, 43, 187, 166, 122, 318, 184, 313, 291, 192, 377, 106, 320, 82, 336, 42, 304 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 529, 215, 525, 319, 468, 360, 420, 365, 476, 374, 478, 461, 405, 505, 337, 459, 285, 495, 182, 414, 150, 434, 98, 400, 90, 285 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 548, 282, 541, 392, 488, 441, 454, 416, 348, 499, 296, 460, 222, 505, 154, 468, 158, 377, 214, 384, 112, 323, 108, 222 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 236, 144, 239, 61, 239, 6, 258, 6, 270, 33, 284, 69, 294, 104, 300, 135, 301, 201, 323, 224, 324, 282, 200, 364, 169, 348, 132, 375, 92, 346, 106, 331, 65, 307, 65, 196 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 70, 220, 73, 176, 67, 150, 83, 134, 88, 72, 131, 50, 236, 134, 206, 255, 267, 106, 311, 182, 310, 303, 277, 332, 281, 352, 230, 376, 221, 355, 203, 342, 175, 368, 55, 281, 55, 236 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 58, 167, 103, 114, 299, 132, 290, 202, 266, 225, 265, 263, 212, 297, 179, 282, 157, 293, 60, 227 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 321, 159, 325, 224, 219, 297, 196, 282, 167, 297, 122, 263, 136, 238, 93, 208, 91, 140 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 210, 99, 208, 138, 120, 198, 79, 172, 81, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 177, 117, 176, 162, 136, 195, 55, 140, 48, 104 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 77, 143, 325, 137, 324, 218, 197, 312, 79, 233, 81, 150 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 53, 145, 68, 131, 311, 146, 313, 226, 190, 314, 61, 228, 66, 158 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 76, 216, 327, 209, 333, 340, 177, 454, 121, 411, 89, 410, 69, 376 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 305, 166, 290, 176, 285, 255, 177, 333, 149, 311, 117, 327, 72, 291, 94, 270, 73, 259, 68, 169 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 32, 167, 48, 149, 283, 162, 274, 256, 256, 272, 269, 298, 224, 335, 195, 315, 170, 334, 64, 262, 55, 182 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 73, 268, 92, 231, 131, 202, 220, 139, 379, 93, 376, 178, 400, 189, 402, 291, 337, 343, 302, 315, 162, 416, 74, 350, 74, 276 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 223, 57, 275, 93, 272, 140, 251, 127, 352, 195, 357, 158, 377, 158, 379, 193, 420, 273, 421, 345, 328, 416, 190, 319, 153, 337, 89, 293, 92, 205, 112, 186, 107, 97, 159, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 83, 96, 204, 7, 247, 98, 251, 181, 110, 284, 82, 287, 21, 247, 28, 179, 44, 171, 55, 129 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 11, 101, 60, 3, 171, 86, 197, 137, 203, 159, 223, 171, 232, 207, 199, 232, 201, 271, 163, 291, 10, 181 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 102, 284, 42, 227, 70, 204, 68, 101, 62, 93, 159, 24, 208, 0, 250, 71, 252, 197, 231, 194, 139, 256, 143, 269, 110, 284 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 80, 13, 118, 7, 232, 95, 230, 224, 155, 277, 40, 181, 45, 83, 29, 70 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 69, 31, 103, 10, 132, 43, 131, 98, 129, 130, 81, 138, 46, 132, 41, 51 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 65, 5, 111, 37, 128, 49, 135, 131, 73, 138, 45, 128, 49, 71, 44, 39 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 87, 358, 91, 202, 167, 272, 238, 274, 300, 239, 305, 400, 252, 436, 242, 462, 214, 476, 177, 471, 156, 456, 149, 423 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 270, 158, 259, 175, 268, 286, 242, 343, 165, 357, 112, 326, 116, 209, 77, 254, 64, 210, 124, 164, 114, 145, 69, 67, 76, 6, 142, 131, 201, 113 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 159, 96, 169, 108, 224, 131, 239, 104, 291, 4, 296, 66, 248, 156, 249, 181, 292, 200, 289, 256, 246, 211, 257, 329, 200, 364, 126, 346, 90, 288, 111, 193, 100, 160, 158, 100, 174, 115 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+points = PoolVector2Array( 300, 191, 310, 367, 235, 428, 230, 453, 216, 472, 182, 477, 156, 470, 142, 447, 86, 404, 90, 234 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+points = PoolVector2Array( 304, 201, 315, 369, 302, 395, 261, 409, 199, 457, 43, 345, 47, 211 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 336, 159, 336, 235, 124, 392, 58, 342, 55, 243 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 335, 236, 335, 335, 260, 388, 55, 239, 56, 174 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+points = PoolVector2Array( 111, 177, 349, 171, 353, 208, 208, 307, 109, 230, 111, 185 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 324, 175, 326, 237, 218, 307, 78, 216, 82, 165 )
+
+[resource]
+0/name = "Barn_01"
+0/texture = ExtResource( 22 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 357, 381 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 178.5, 190.5 )
+0/navigation_offset = Vector2( 178.5, 190.5 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Barn_02"
+1/texture = ExtResource( 27 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 332, 382 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 166, 191 )
+1/navigation_offset = Vector2( 166, 191 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Guardhouse_01"
+2/texture = ExtResource( 28 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 452, 457 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 226, 228.5 )
+2/navigation_offset = Vector2( 226, 228.5 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 13 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Guardhouse_02"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 317, 478 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 158.5, 239 )
+3/navigation_offset = Vector2( 158.5, 239 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 24 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Guardhouse_03"
+4/texture = ExtResource( 29 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 314, 477 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 157, 238.5 )
+4/navigation_offset = Vector2( 157, 238.5 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 27 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 27 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Guardhouse_04"
+5/texture = ExtResource( 17 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 318, 457 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 159, 228.5 )
+5/navigation_offset = Vector2( 159, 228.5 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 28 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 28 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "HalfTimberedHouse_01"
+6/texture = ExtResource( 15 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 352, 392 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 176, 196 )
+6/navigation_offset = Vector2( 176, 196 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 29 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "HalfTimberedHouse_02"
+7/texture = ExtResource( 19 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 347, 391 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 173.5, 195.5 )
+7/navigation_offset = Vector2( 173.5, 195.5 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 30 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 30 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "LakeHouse_01"
+8/texture = ExtResource( 3 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 371, 311 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 185.5, 155.5 )
+8/navigation_offset = Vector2( 185.5, 155.5 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 31 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 31 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "LakeHouse_02"
+9/texture = ExtResource( 21 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 338, 312 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 169, 156 )
+9/navigation_offset = Vector2( 169, 156 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 32 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Manor_01"
+10/texture = ExtResource( 26 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 533, 509 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 266.5, 254.5 )
+10/navigation_offset = Vector2( 266.5, 254.5 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 3 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Manor_02"
+11/texture = ExtResource( 23 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 557, 510 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 278.5, 255 )
+11/navigation_offset = Vector2( 278.5, 255 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 4 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "Mansion_01"
+12/texture = ExtResource( 25 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 324, 379 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 162, 189.5 )
+12/navigation_offset = Vector2( 162, 189.5 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 5 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "Mansion_02"
+13/texture = ExtResource( 4 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 315, 378 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 157.5, 189 )
+13/navigation_offset = Vector2( 157.5, 189 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 6 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+14/name = "OutHouse_01"
+14/texture = ExtResource( 12 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 301, 301 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 150.5, 150.5 )
+14/navigation_offset = Vector2( 150.5, 150.5 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 7 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+15/name = "OutHouse_02"
+15/texture = ExtResource( 16 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 329, 301 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 164.5, 150.5 )
+15/navigation_offset = Vector2( 164.5, 150.5 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 8 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+16/name = "Shed_01"
+16/texture = ExtResource( 32 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 223, 198 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 111.5, 99 )
+16/navigation_offset = Vector2( 111.5, 99 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 9 )
+16/shape_one_way = false
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+16/z_index = 0
+17/name = "Shed_02"
+17/texture = ExtResource( 11 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 191, 198 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 95.5, 99 )
+17/navigation_offset = Vector2( 95.5, 99 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 10 )
+17/shape_one_way = false
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+17/z_index = 0
+18/name = "SmallBarn_01"
+18/texture = ExtResource( 30 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 336, 317 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 168, 158.5 )
+18/navigation_offset = Vector2( 168, 158.5 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape = SubResource( 11 )
+18/shape_one_way = false
+18/shape_one_way_margin = 1.0
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+18/z_index = 0
+19/name = "SmallBarn_02"
+19/texture = ExtResource( 2 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 320, 317 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 160, 158.5 )
+19/navigation_offset = Vector2( 160, 158.5 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape = SubResource( 12 )
+19/shape_one_way = false
+19/shape_one_way_margin = 1.0
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+19/z_index = 0
+20/name = "SmallHouse_01"
+20/texture = ExtResource( 5 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 311, 333 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 155.5, 166.5 )
+20/navigation_offset = Vector2( 155.5, 166.5 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape = SubResource( 14 )
+20/shape_one_way = false
+20/shape_one_way_margin = 1.0
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+20/z_index = 0
+21/name = "SmallHouse_02"
+21/texture = ExtResource( 18 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 292, 335 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 146, 167.5 )
+21/navigation_offset = Vector2( 146, 167.5 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape = SubResource( 15 )
+21/shape_one_way = false
+21/shape_one_way_margin = 1.0
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+21/z_index = 0
+22/name = "SmallMansion_01"
+22/texture = ExtResource( 6 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 402, 418 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 201, 209 )
+22/navigation_offset = Vector2( 201, 209 )
+22/shape_offset = Vector2( 0, 0 )
+22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+22/shape = SubResource( 16 )
+22/shape_one_way = false
+22/shape_one_way_margin = 1.0
+22/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+22/z_index = 0
+23/name = "SmallMansion_02"
+23/texture = ExtResource( 20 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 423, 418 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 211.5, 209 )
+23/navigation_offset = Vector2( 211.5, 209 )
+23/shape_offset = Vector2( 0, 0 )
+23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+23/shape = SubResource( 17 )
+23/shape_one_way = false
+23/shape_one_way_margin = 1.0
+23/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+23/z_index = 0
+24/name = "StitHouse1_01"
+24/texture = ExtResource( 7 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 252, 294 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 126, 147 )
+24/navigation_offset = Vector2( 126, 147 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape = SubResource( 18 )
+24/shape_one_way = false
+24/shape_one_way_margin = 1.0
+24/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+24/z_index = 0
+25/name = "StitHouse1_02"
+25/texture = ExtResource( 14 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 232, 294 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 116, 147 )
+25/navigation_offset = Vector2( 116, 147 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape = SubResource( 19 )
+25/shape_one_way = false
+25/shape_one_way_margin = 1.0
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+25/z_index = 0
+26/name = "StitHouse2_01"
+26/texture = ExtResource( 8 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 260, 293 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 130, 146.5 )
+26/navigation_offset = Vector2( 130, 146.5 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape = SubResource( 20 )
+26/shape_one_way = false
+26/shape_one_way_margin = 1.0
+26/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+26/z_index = 0
+27/name = "StitHouse2_02"
+27/texture = ExtResource( 13 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 250, 293 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 125, 146.5 )
+27/navigation_offset = Vector2( 125, 146.5 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape = SubResource( 21 )
+27/shape_one_way = false
+27/shape_one_way_margin = 1.0
+27/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+27/z_index = 0
+28/name = "Well_01"
+28/texture = ExtResource( 31 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 138, 138 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 69, 69 )
+28/navigation_offset = Vector2( 69, 69 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape = SubResource( 22 )
+28/shape_one_way = false
+28/shape_one_way_margin = 1.0
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+28/z_index = 0
+29/name = "Well_02"
+29/texture = ExtResource( 24 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 136, 138 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 68, 69 )
+29/navigation_offset = Vector2( 68, 69 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape = SubResource( 23 )
+29/shape_one_way = false
+29/shape_one_way_margin = 1.0
+29/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+29/z_index = 0
+30/name = "WindMill_01"
+30/texture = ExtResource( 9 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 0, 270, 365 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 135, 182.5 )
+30/navigation_offset = Vector2( 135, 182.5 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape = SubResource( 25 )
+30/shape_one_way = false
+30/shape_one_way_margin = 1.0
+30/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+30/z_index = 0
+31/name = "WindMill_02"
+31/texture = ExtResource( 10 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 296, 365 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 148, 182.5 )
+31/navigation_offset = Vector2( 148, 182.5 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape = SubResource( 26 )
+31/shape_one_way = false
+31/shape_one_way_margin = 1.0
+31/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+31/z_index = 0

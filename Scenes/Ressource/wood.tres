@@ -1,0 +1,204 @@
+[gd_resource type="TileSet" load_steps=17 format=2]
+
+[ext_resource path="res://Assets/tileset/Pine_01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/tileset/Pine_02.png" type="Texture" id=2]
+[ext_resource path="res://Assets/tileset/WinterTree_02.png" type="Texture" id=3]
+[ext_resource path="res://Assets/tileset/WinterTree_01.png" type="Texture" id=4]
+[ext_resource path="res://Assets/tileset/Pine_05.png" type="Texture" id=5]
+[ext_resource path="res://Assets/tileset/SmallPine.png" type="Texture" id=6]
+[ext_resource path="res://Assets/tileset/Pine_04.png" type="Texture" id=7]
+[ext_resource path="res://Assets/tileset/Pine_03.png" type="Texture" id=8]
+
+[sub_resource type="ConcavePolygonShape2D" id=1]
+segments = PoolVector2Array( 70, 381, 70, 349, 70, 349, 5, 307, 5, 307, 16, 281, 16, 281, 13, 262, 13, 262, 31, 235, 31, 235, 17, 227, 17, 227, 46, 198, 46, 198, 31, 181, 31, 181, 75, 145, 75, 145, 71, 111, 71, 111, 59, 113, 59, 113, 42, 97, 42, 97, 56, 83, 56, 83, 39, 58, 39, 58, 42, 27, 42, 27, 72, 1, 72, 1, 70, 71, 70, 71, 101, 94, 101, 94, 84, 109, 84, 109, 95, 121, 95, 121, 89, 155, 89, 155, 105, 182, 105, 182, 116, 201, 116, 201, 143, 227, 143, 227, 129, 237, 129, 237, 136, 256, 136, 256, 155, 290, 155, 290, 158, 318, 158, 318, 133, 339, 133, 339, 93, 343, 93, 343, 96, 383, 96, 383, 70, 381 )
+
+[sub_resource type="ConcavePolygonShape2D" id=2]
+segments = PoolVector2Array( 74, 317, 100, 302, 100, 302, 100, 272, 100, 272, 56, 263, 56, 263, 42, 236, 42, 236, 70, 205, 70, 205, 62, 190, 62, 190, 86, 169, 86, 169, 74, 157, 74, 157, 95, 137, 95, 137, 83, 124, 83, 124, 90, 93, 90, 93, 101, 11, 101, 11, 117, 91, 117, 91, 132, 125, 132, 125, 125, 140, 125, 140, 140, 159, 140, 159, 128, 176, 128, 176, 143, 212, 143, 212, 160, 238, 160, 238, 154, 260, 154, 260, 117, 275, 117, 275, 115, 305, 115, 305, 150, 328, 150, 328, 111, 327, 111, 327, 96, 341, 96, 341, 74, 317 )
+
+[sub_resource type="ConcavePolygonShape2D" id=3]
+segments = PoolVector2Array( 111, 290, 115, 255, 115, 255, 114, 236, 114, 236, 84, 229, 84, 229, 66, 205, 66, 205, 79, 183, 79, 183, 92, 143, 92, 143, 98, 104, 98, 104, 109, 66, 109, 66, 123, 43, 123, 43, 130, 6, 130, 6, 153, 84, 153, 84, 164, 129, 164, 129, 172, 159, 172, 159, 195, 211, 195, 211, 165, 237, 165, 237, 155, 251, 155, 251, 140, 274, 140, 274, 144, 294, 144, 294, 111, 290 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 52, 101, 32, 101, 19, 81, 47, 0, 84, 73, 80, 92, 56, 102, 59, 120 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 82, 163, 55, 157, 27, 130, 94, 2, 147, 127, 137, 153, 91, 162 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 29, 92, 59, 72, 73, 33, 91, 7, 106, 36, 118, 80, 146, 95, 161, 128, 150, 159, 123, 183, 93, 191, 98, 221, 71, 215, 75, 189, 46, 175, 26, 140, 11, 121 )
+
+[sub_resource type="ConcavePolygonShape2D" id=7]
+segments = PoolVector2Array( 207, 296, 192, 277, 192, 277, 183, 282, 183, 282, 165, 292, 165, 292, 137, 295, 137, 295, 127, 283, 127, 283, 134, 281, 134, 281, 166, 274, 166, 274, 177, 266, 177, 266, 178, 229, 178, 229, 165, 193, 165, 193, 152, 175, 152, 175, 124, 215, 124, 215, 66, 215, 66, 215, 32, 144, 32, 144, 23, 99, 23, 99, 49, 78, 49, 78, 75, 55, 75, 55, 88, 21, 88, 21, 135, 9, 135, 9, 198, 13, 198, 13, 258, 20, 258, 20, 305, 49, 305, 49, 352, 76, 352, 76, 348, 124, 348, 124, 334, 165, 334, 165, 297, 161, 297, 161, 238, 164, 238, 164, 278, 186, 278, 186, 261, 199, 261, 199, 228, 171, 228, 171, 210, 218, 210, 218, 209, 250, 209, 250, 269, 277, 269, 277, 217, 270, 217, 270, 240, 306, 240, 306, 207, 296 )
+
+[sub_resource type="ConcavePolygonShape2D" id=8]
+segments = PoolVector2Array( 101, 259, 93, 238, 93, 238, 79, 214, 79, 214, 72, 177, 72, 177, 51, 143, 51, 143, 21, 116, 21, 116, 17, 87, 17, 87, 33, 62, 33, 62, 37, 34, 37, 34, 55, 34, 55, 34, 67, 22, 67, 22, 89, 4, 89, 4, 109, 16, 109, 16, 132, 32, 132, 32, 162, 41, 162, 41, 165, 66, 165, 66, 150, 99, 150, 99, 175, 101, 175, 101, 138, 129, 138, 129, 118, 162, 118, 162, 96, 195, 96, 195, 107, 248, 107, 248, 101, 259 )
+
+[resource]
+0/name = "Pine_01"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 158, 405 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 79, 202.5 )
+0/navigation_offset = Vector2( 79, 202.5 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Pine_02"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 160, 342 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 80, 171 )
+1/navigation_offset = Vector2( 80, 171 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Pine_03"
+2/texture = ExtResource( 8 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 199, 303 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 99.5, 151.5 )
+2/navigation_offset = Vector2( 99.5, 151.5 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Pine_04"
+3/texture = ExtResource( 7 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 86, 132 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 43, 66 )
+3/navigation_offset = Vector2( 43, 66 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Pine_05"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 149, 173 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 74.5, 86.5 )
+4/navigation_offset = Vector2( 74.5, 86.5 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 5 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "SmallPine"
+5/texture = ExtResource( 6 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 161, 244 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 80.5, 122 )
+5/navigation_offset = Vector2( 80.5, 122 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 6 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "WinterTree_02"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 374, 328 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 187, 164 )
+6/navigation_offset = Vector2( 187, 164 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 7 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "WinterTree_01"
+7/texture = ExtResource( 4 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 186, 285 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 93, 142.5 )
+7/navigation_offset = Vector2( 93, 142.5 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 8 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0

@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="Tree1" type="Area2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, 25, 35, 0, 0, -25, -35, 0 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -50 )
+scale = Vector2( 0.3, 0.3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}

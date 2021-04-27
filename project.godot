@@ -12,37 +12,37 @@ _global_script_classes=[ {
 "base": "TextureButton",
 "class": "Card",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Deck/Cards/Card.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card.gd"
 }, {
 "base": "Card",
 "class": "Card_Convert",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Convert.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Convert.gd"
 }, {
 "base": "Card",
 "class": "Card_Kill",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Kill.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Kill.gd"
 }, {
 "base": "Card",
 "class": "Card_Threat",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Deck/Cards/Card_Threat.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Threat.gd"
 }, {
 "base": "Node",
 "class": "Deck",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Deck/Deck.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Deck.gd"
 }, {
 "base": "Node",
 "class": "Village",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Village/Village.gd"
+"path": "res://Scripts/Instances/Classes/Village/Village.gd"
 }, {
-"base": "Node",
+"base": "KinematicBody2D",
 "class": "Villager",
 "language": "GDScript",
-"path": "res://Scenes/Instances/Classes/Village/Villager.gd"
+"path": "res://Scripts/Instances/Classes/Village/Villager.gd"
 } ]
 _global_script_class_icons={
 "Card": "",
@@ -62,8 +62,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ServerData="*res://Scenes/Singletons/ServerData.gd"
+ServerData="*res://Scripts/Singletons/ServerData.gd"
 Actions="*res://Scripts/Actions.gd"
+SceneChanger="*res://Scripts/Singletons/Scene_Changer.gd"
 
 [rendering]
 
