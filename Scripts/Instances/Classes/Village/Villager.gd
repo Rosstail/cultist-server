@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const SPEED = 40
+const SPEED = 80
 var collision = Vector2()
 var path = []
 var rng = RandomNumberGenerator.new()
@@ -8,7 +8,6 @@ onready var level_navigation = get_parent()
 onready var close_position = null
 onready var screen_size = get_viewport().size
 onready var animated_sprite = $AnimatedSprite
-#onready var timer = $Timer
 onready var in_discussion = false
 var a = null
 var b = null
@@ -29,7 +28,6 @@ func _ready():
 
 func generate_path():
 	path = level_navigation.get_simple_path(global_position, close_position, true)
-	print(path)
 	
 func navigate():
 	if path.size() > 0:
@@ -54,7 +52,7 @@ func check_global_pos(close_position):
 		else:
 			state = IDLE
 	elif collision:
-		if "Town_folk_man" in collision.collider.name:
+		if "Villager" in collision.collider.name:
 			print("collision of "+ String(collision.collider.name))
 			state = DISCUSSING
 		a = rng.randf_range(-100.0, 100.0)
@@ -84,12 +82,13 @@ func _physics_process(delta):
 				animated_sprite.flip_h = false
 			animated_sprite.animation = "walk"
 		DISCUSSING:
+			print("DISCUSSIIIIIIING")
 			animated_sprite.animation = "idle"
-			$bubble.show()
+			$Sprite.show()
 #			yield(get_tree().create_timer(rng.randi_range(5, 10)), "timeout")
 			yield(get_tree().create_timer(10.0), "timeout")
 #			print("ended")
-			$bubble.hide()
+			$Sprite.hide()
 			state = WALK
 
 
