@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+class_name Villager
+
 const SPEED = 40
 var collision = Vector2()
 var path = []
@@ -21,11 +23,36 @@ var state = WALK
 var chance = null
 var fear = 0
 
+var id
+var home
+var npc_name
+var max_health
+var health
+var fear_veteran
+var fear_newcomer
+var charisma
+var sect
+
 
 func _ready():
 	rng.randomize()
 	close_position = Vector2(global_position.x +  rng.randf_range(-100.0, 100.0), global_position.y + rng.randf_range(-100.0, 100.0))
 #	GameManager.team.append(self)
+
+func gnrt(id, dict):
+	self.id = id
+	self.home = ServerData.homes[dict["home"]]
+	#global_position.x = home[0]
+	#global_position.y = home[1]
+	self.npc_name = dict["name"]
+	self.health = dict["health"]
+	self.max_health = self.health
+	self.fear_veteran = dict["default_fear_veteran"]
+	self.fear_newcomer = dict["default_fear_newcomer"]
+	self.charisma = dict["charisma"]
+	self.sect = dict["sect"]
+	print(self.npc_name + " : " + self.sect)
+	#print("Global position of " + self.npc_name + " : " + str(global_position))
 
 func generate_path():
 	path = level_navigation.get_simple_path(global_position, close_position, true)

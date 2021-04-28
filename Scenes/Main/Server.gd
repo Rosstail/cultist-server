@@ -6,8 +6,8 @@ var max_players = 2 #Maximum players allowed
 var rng = RandomNumberGenerator.new()
 
 func _ready(): #When the scene is ready
+	Scene_Spawner.new()
 	StartServer()
-	
 	#TO MOVE
 #	var nav = $Node2D/Village/Navigation2D
 #	for villager in ServerData.village_data.villagers:
