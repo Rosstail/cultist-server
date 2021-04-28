@@ -10,7 +10,7 @@ onready var level_navigation = get_parent()
 onready var close_position = null
 onready var screen_size = get_viewport().size
 onready var animated_sprite = $AnimatedSprite
-onready var timer = $Timer
+#onready var timer = $Timer
 onready var in_discussion = false
 var a = null
 var b = null
@@ -37,15 +37,15 @@ func _ready():
 	rng.randomize()
 	close_position = Vector2(global_position.x +  rng.randf_range(-100.0, 100.0), global_position.y + rng.randf_range(-100.0, 100.0))
 
-func _init(id, dict):
-	self.id = id
-	self.npc_name = dict["name"]
-	self.health = dict["health"]
-	self.max_health = self.health
-	self.fear_veteran = dict["default_fear_veteran"]
-	self.fear_newcomer = dict["default_fear_newcomer"]
-	self.charisma = dict["charisma"]
-	self.sect = dict["sect"]
+#func _init(id, dict):
+#	self.id = id
+#	self.npc_name = dict["name"]
+#	self.health = dict["health"]
+#	self.max_health = self.health
+#	self.fear_veteran = dict["default_fear_veteran"]
+#	self.fear_newcomer = dict["default_fear_newcomer"]
+#	self.charisma = dict["charisma"]
+#	self.sect = dict["sect"]
 
 func generate_path():
 	path = level_navigation.get_simple_path(global_position, close_position, true)
@@ -57,7 +57,8 @@ func navigate():
 			path.remove(0)
 	
 func move(delta):
-	collision = move_and_collide(collision * delta)
+	print("moving")
+	move_and_collide(collision * delta)
 	
 func check_global_pos(close_position):
 	if global_position.distance_to(close_position) < 5:
@@ -86,6 +87,8 @@ func check_global_pos(close_position):
 	
 	
 func _physics_process(delta):
+	print(global_position)
+	print(close_position)
 	match state:
 		IDLE:
 			animated_sprite.animation = "idle"
