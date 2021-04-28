@@ -23,7 +23,6 @@ var state = WALK
 var chance = null
 var fear = 0
 
-var id
 var home
 var npc_name
 var max_health
@@ -39,8 +38,7 @@ func _ready():
 	close_position = Vector2(global_position.x +  rng.randf_range(-100.0, 100.0), global_position.y + rng.randf_range(-100.0, 100.0))
 #	GameManager.team.append(self)
 
-func gnrt(id, dict):
-	self.id = id
+func gnrt(dict):
 	self.home = ServerData.homes[dict["home"]]
 	#global_position.x = home[0]
 	#global_position.y = home[1]
@@ -56,7 +54,7 @@ func gnrt(id, dict):
 
 func generate_path():
 	path = level_navigation.get_simple_path(global_position, close_position, true)
-	print(path)
+	#print(path)
 	
 func navigate():
 	if path.size() > 0:
