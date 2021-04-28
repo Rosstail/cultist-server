@@ -5,4 +5,4 @@ var village_data
 
 func _ready():
 	deck_data = Deck.new()
-	village_data = Village.new()
+	#village_data = Village.new()

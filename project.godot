@@ -29,11 +29,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Threat.gd"
 }, {
-"base": "KinematicBody2D",
-"class": "Char_test",
-"language": "GDScript",
-"path": "res://char_test.gd"
-}, {
 "base": "Node",
 "class": "Deck",
 "language": "GDScript",
@@ -43,21 +38,14 @@ _global_script_classes=[ {
 "class": "Village",
 "language": "GDScript",
 "path": "res://Scripts/Instances/Classes/Village/Village.gd"
-}, {
-"base": "KinematicBody2D",
-"class": "Villager",
-"language": "GDScript",
-"path": "res://Scripts/Instances/Classes/Village/Villager.gd"
 } ]
 _global_script_class_icons={
 "Card": "",
 "Card_Convert": "",
 "Card_Kill": "",
 "Card_Threat": "",
-"Char_test": "",
 "Deck": "",
-"Village": "",
-"Villager": ""
+"Village": ""
 }
 
 [application]

@@ -1,0 +1,60 @@
+{
+	"villagers": [
+		{
+			"scout" : {
+				"location": "tavern",
+				"name": "The Scout",
+				"health": 100,
+				"default_fear_veteran": 20,
+				"default_fear_newcomer": 0,
+				"charisma": 10,
+				"sect": "veteran"
+			},
+			"soldier" : {
+				"location": "pontoon",
+				"name": "The Soldier",
+				"health": 100,
+				"default_fear_veteran": 0,
+				"default_fear_newcomer": 20,
+				"charisma": 7,
+				"sect": "newcomer"
+			},
+			"pyro" : {
+				"location": "farm",
+				"name": "The Pyro",
+				"health": 100,
+				"default_fear_veteran": 40,
+				"default_fear_newcomer": 20,
+				"charisma": 13,
+				"sect": "none"
+			},
+			"demoman" : {
+				"location": "mill",
+				"name": "The Demoman",
+				"health": 100,
+				"default_fear_veteran": 40,
+				"default_fear_newcomer": 40,
+				"charisma": 10,
+				"sect": "none"
+			},
+			"heavy" : {
+				"location": "warehouse",
+				"name": "The Heavy",
+				"health": 100,
+				"default_fear_veteran": 0,
+				"default_fear_newcomer": 0,
+				"charisma": 10,
+				"sect": "none"
+			},
+			"engineer" : {
+				"location": "shop",
+				"name": "The Engineer",
+				"health": 100,
+				"default_fear_veteran": 10,
+				"default_fear_newcomer": 40,
+				"charisma": 18,
+				"sect": "none"
+			}
+		}
+	]
+}
