@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=18 format=2]
+[gd_resource type="TileSet" load_steps=21 format=2]
 
 [ext_resource path="res://Assets/tileset/Lantern_02.png" type="Texture" id=1]
 [ext_resource path="res://Assets/tileset/StreetLamp1On_01.png" type="Texture" id=2]
@@ -11,26 +11,35 @@
 [ext_resource path="res://Assets/tileset/StreetLamp2On_01.png" type="Texture" id=9]
 [ext_resource path="res://Assets/tileset/StreetLamp1Off_01.png" type="Texture" id=10]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 60, 198, 68, 56, 53, 47, 52, 19, 65, 7, 83, 19, 86, 45, 77, 57, 81, 190 )
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 86, 204.699, 54.8148, 204.699, 54.8148, 154.931, 86, 154.931 )
 
-[sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 61, 197, 69, 59, 59, 46, 56, 19, 65, 8, 85, 22, 81, 55, 71, 64, 79, 188 )
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 84.3287, 205, 57.1296, 205, 57.1296, 165.347, 84.3287, 165.347 )
 
-[sub_resource type="ConcavePolygonShape2D" id=3]
-segments = PoolVector2Array( 64, 172, 67, 80, 67, 80, 64, 76, 64, 76, 74, 33, 74, 33, 54, 1, 54, 1, 74, 13, 74, 13, 82, 171, 82, 171, 64, 172 )
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 81.4352, 177.5, 60.6018, 177.5, 60.6018, 135.255, 81.4352, 135.255 )
 
-[sub_resource type="ConcavePolygonShape2D" id=4]
-segments = PoolVector2Array( 53, 38, 51, 80, 51, 80, 39, 69, 39, 69, 44, 25, 44, 25, 52, 0, 52, 0, 53, 38 )
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 83.75, 178.079, 58.8657, 178.079, 58.8657, 132.361, 83.75, 132.361 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 64, 167, 72, 5, 104, 13, 102, 74, 90, 76, 78, 41, 81, 165 )
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 82, 179, 60.6018, 179, 60.6018, 125.417, 82, 125.417 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 66, 169, 68, 38, 57, 76, 44, 81, 39, 27, 53, 1, 77, 6, 81, 165 )
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 82.0139, 179, 60.6018, 179, 60.6018, 131.782, 82.0139, 131.782 )
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 36, 77, 12, 77, 90, 80, 161, 78, 176 )
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 29.9305, 41, 4.46759, 41, 4.46759, 5.625, 29.9305, 5.625 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 28.7731, 40.3472, 5.0463, 40.3472, 5.0463, 6.2037, 28.7731, 6.2037 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 64.6527, 65.8102, 28.1944, 65.8102, 28.1944, 28.1944, 64.6527, 28.1944 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 65.8102, 66, 25.8796, 66, 25.8796, 20.6713, 65.8102, 20.6713 )
 
 [resource]
 0/name = "StreetLamp1Off_01"
@@ -43,14 +52,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 0/navigation_offset = Vector2( 43, 102.5 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 1 )
+0/shape = SubResource( 8 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 1 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -64,14 +73,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 1/navigation_offset = Vector2( 47.5, 102.5 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 2 )
+1/shape = SubResource( 9 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 2 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
@@ -85,20 +94,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 2/navigation_offset = Vector2( 41, 89.5 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 3 )
+2/shape = SubResource( 10 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -112,14 +115,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 3/navigation_offset = Vector2( 55, 89.5 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 5 )
+3/shape = SubResource( 11 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
@@ -133,14 +136,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 4/navigation_offset = Vector2( 41, 89.5 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 6 )
+4/shape = SubResource( 12 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
@@ -154,14 +157,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 5/navigation_offset = Vector2( 60.5, 89.5 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 7 )
+5/shape = SubResource( 13 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
@@ -175,9 +178,16 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 6/navigation_offset = Vector2( 20.5, 20.5 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 14 )
 6/shape_one_way = false
-6/shape_one_way_margin = 0.0
-6/shapes = [  ]
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 6/z_index = 0
 7/name = "Lamp_02"
 7/texture = ExtResource( 4 )
@@ -189,9 +199,16 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 7/navigation_offset = Vector2( 20.5, 20.5 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 15 )
 7/shape_one_way = false
-7/shape_one_way_margin = 0.0
-7/shapes = [  ]
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 7/z_index = 0
 8/name = "Lantern_01"
 8/texture = ExtResource( 3 )
@@ -203,9 +220,16 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 8/navigation_offset = Vector2( 36, 33.5 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 16 )
 8/shape_one_way = false
-8/shape_one_way_margin = 0.0
-8/shapes = [  ]
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 8/z_index = 0
 9/name = "Lantern_02"
 9/texture = ExtResource( 1 )
@@ -217,7 +241,14 @@ points = PoolVector2Array( 63, 170, 71, 6, 91, 6, 110, 46, 102, 78, 84, 73, 89, 
 9/navigation_offset = Vector2( 36, 33 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 17 )
 9/shape_one_way = false
-9/shape_one_way_margin = 0.0
-9/shapes = [  ]
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 9/z_index = 0

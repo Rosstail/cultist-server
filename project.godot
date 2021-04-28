@@ -35,6 +35,11 @@ _global_script_classes=[ {
 "path": "res://Scripts/Instances/Classes/Deck/Deck.gd"
 }, {
 "base": "Node",
+"class": "Scene_Spawner",
+"language": "GDScript",
+"path": "res://Scripts/SceneSpawner.gd"
+}, {
+"base": "Node",
 "class": "Village",
 "language": "GDScript",
 "path": "res://Scripts/Instances/Classes/Village/Village.gd"
@@ -50,6 +55,7 @@ _global_script_class_icons={
 "Card_Kill": "",
 "Card_Threat": "",
 "Deck": "",
+"Scene_Spawner": "",
 "Village": "",
 "Villager": ""
 }
