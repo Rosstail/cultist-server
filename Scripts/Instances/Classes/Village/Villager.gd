@@ -10,7 +10,6 @@ onready var level_navigation = get_parent()
 onready var close_position = null
 onready var screen_size = get_viewport().size
 onready var animated_sprite = $AnimatedSprite
-#onready var timer = $Timer
 onready var in_discussion = false
 var a = null
 var b = null
@@ -57,7 +56,7 @@ func navigate():
 			path.remove(0)
 	
 func move(delta):
-	print("moving")
+	print(global_position)
 	move_and_collide(collision * delta)
 	
 func check_global_pos(close_position):
@@ -87,12 +86,9 @@ func check_global_pos(close_position):
 	
 	
 func _physics_process(delta):
-	print(global_position)
-	print(close_position)
 	match state:
 		IDLE:
 			animated_sprite.animation = "idle"
-#			yield(get_tree().create_timer(rng.randi_range(1, 5)), "timeout")
 			yield(get_tree().create_timer(1.0), "timeout")
 			state = WALK
 		WALK:
@@ -108,8 +104,7 @@ func _physics_process(delta):
 		DISCUSSING:
 			animated_sprite.animation = "idle"
 			$bubble.show()
-#			yield(get_tree().create_timer(rng.randi_range(5, 10)), "timeout")
-			yield(get_tree().create_timer(10.0), "timeout")
+			yield(get_tree().create_timer(5.0), "timeout")
 			print("ended")
 			$bubble.hide()
 			state = WALK
