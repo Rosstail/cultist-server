@@ -9,10 +9,10 @@ func _ready(): #When the scene is ready
 	StartServer()
 	
 	#TO MOVE
-	var nav = $Node2D/Village/Navigation2D
-	for villager in ServerData.village_data.villagers:
-		print(villager.npc_name)
-		nav.add_child(villager)
+#	var nav = $Node2D/Village/Navigation2D
+#	for villager in ServerData.village_data.villagers:
+#		print(villager.npc_name)
+#		nav.add_child(villager)
 
 
 func StartServer(): #Starts the server
