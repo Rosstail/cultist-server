@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Main/Server.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Main/Village.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Main/Camera2D.gd" type="Script" id=3]
-[ext_resource path="res://Scenes/Entities/Villager.tscn" type="PackedScene" id=4]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 3627.22, -31.0396, 3672.58, 2327.53, -46.7056, 2302.33, -42.4312, -23.5497 )
@@ -36,6 +35,3 @@ script = ExtResource( 3 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Node2D/Navigation2D"]
 navpoly = SubResource( 1 )
-
-[node name="Villager" parent="Node2D/Navigation2D" instance=ExtResource( 4 )]
-position = Vector2( 668.174, 374.177 )

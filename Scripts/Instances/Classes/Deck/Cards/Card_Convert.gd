@@ -7,6 +7,6 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _init(name, dict).(name, dict):
+func _init(name, dict).(name):
 	pass
 	#set_normal_texture(picture)

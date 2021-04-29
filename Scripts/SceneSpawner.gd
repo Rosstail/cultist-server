@@ -19,6 +19,6 @@ func _init():
 		var npc = npc_scene.instance()
 		npc.position.x = homes[villager.home][0]
 		npc.position.y = homes[villager.home][1]
-#		npc.gnrt(villager)
+		npc.gnrt(villager)
 		array_villagers.append(npc)
 		print("spawned " + villager.name + " at " + str(npc.position.x) + ":" + str(npc.position.y))

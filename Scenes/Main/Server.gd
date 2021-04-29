@@ -3,7 +3,6 @@ extends Node
 var network = NetworkedMultiplayerENet.new() #Create a new multiplayer network
 var port = 25565 #Port used for connexion
 var max_players = 2 #Maximum players allowed
-var villager= preload("res://scenes/Entities/Villager.tscn")
 
 var rng = RandomNumberGenerator.new()
 
@@ -34,6 +33,17 @@ func StartServer(): #Starts the server
 
 func _Peer_Connected(player_id): #Upon player is connected
 	print("User " + str(player_id) + " Connected.")
+	var ids = []
+	while ServerData.deck_data.main_newcomer.size() < 5:
+		var i = rng.randi_range(0, ServerData.deck_data.deck.size())
+		if !ids.has(i):
+			ids.append(i)
+			ServerData.deck_data.main_newcomer.append(ServerData.deck_data.deck[i])
+			print(i)
+		print("Added card to newcomer")
+	for card in ServerData.deck_data.main_newcomer:
+		print(card)
+		ServerData.deck_data.deck.erase(card)
 
 
 func _Peer_Disconnected(player_id): #Upon player is disconnected
