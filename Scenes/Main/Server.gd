@@ -33,21 +33,20 @@ func StartServer(): #Starts the server
 
 func _Peer_Connected(player_id): #Upon player is connected
 	print("User " + str(player_id) + " Connected.")
-	var ids = []
-	while ServerData.deck_data.main_newcomer.size() < 5:
-		var i = rng.randi_range(0, ServerData.deck_data.deck.size())
-		if !ids.has(i):
-			ids.append(i)
-			ServerData.deck_data.main_newcomer.append(ServerData.deck_data.deck[i])
-			print(i)
-		print("Added card to newcomer")
-	for card in ServerData.deck_data.main_newcomer:
-		print(card)
-		ServerData.deck_data.deck.erase(card)
 
 
 func _Peer_Disconnected(player_id): #Upon player is disconnected
 	print("User " + str(player_id) + " Disconnected.")
+
+
+remote func FetchCreatePlayer(nick_name, is_veteran, requester):
+	print("fetching")
+	if (ServerData.Veteran == null && is_veteran):
+		Veteran.new(requester, nick_name)
+		Actions.GenerateVeteranCard()
+	else:
+		Newcomer.new(requester, nick_name)
+		Actions.GenerateNewcomerCard()
 
 remote func FetchCardEffect(card_id, requester):
 	var player_id = get_tree().get_rpc_sender_id()

@@ -39,10 +39,25 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/Instances/Classes/Deck/Deck.gd"
 }, {
+"base": "Player",
+"class": "Newcomer",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Newcomer.gd"
+}, {
+"base": "Node",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Player.gd"
+}, {
 "base": "Node2D",
 "class": "Scene_Spawner",
 "language": "GDScript",
 "path": "res://Scripts/SceneSpawner.gd"
+}, {
+"base": "Player",
+"class": "Veteran",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Veteran.gd"
 }, {
 "base": "Node",
 "class": "Village",
@@ -61,7 +76,10 @@ _global_script_class_icons={
 "Card_Threat_Newcomer": "",
 "Card_Threat_Veteran": "",
 "Deck": "",
+"Newcomer": "",
+"Player": "",
 "Scene_Spawner": "",
+"Veteran": "",
 "Village": "",
 "Villager": ""
 }
