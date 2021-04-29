@@ -3,9 +3,6 @@ extends TextureButton
 class_name Card
 
 var id
-var title
-var desc
-var display
 #var picture
 #var back 
 
@@ -17,11 +14,8 @@ func _ready():
 #	self.set_custom_minimum_size(Vector2(70, 95))
 	
 	
-func _init(id, dict):
+func _init(id):
 	self.id = id
-	self.title = dict["title"]
-	self.desc = dict["desc"]
-	self.display = dict["display"]
 	#self.picture = load("res://Assets/Cards/Pictures/Characters/card-" + title + ".png")
 	#set_normal_texture(picture)
 	

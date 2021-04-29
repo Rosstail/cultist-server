@@ -10,6 +10,8 @@ var homes = {
 	"warehouse": Vector2(2375, 375),
 	"shop": Vector2(3200, 925)
 }
+var Veteran
+var Newcomer
 
 func _ready():
 	deck_data = Deck.new()

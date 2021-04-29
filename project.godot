@@ -25,19 +25,39 @@ _global_script_classes=[ {
 "path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Kill.gd"
 }, {
 "base": "Card",
-"class": "Card_Threat",
+"class": "Card_Threat_Newcomer",
 "language": "GDScript",
-"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Threat.gd"
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Threat_Newcomer.gd"
+}, {
+"base": "Card",
+"class": "Card_Threat_Veteran",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Deck/Cards/Card_Threat_Veteran.gd"
 }, {
 "base": "Node",
 "class": "Deck",
 "language": "GDScript",
 "path": "res://Scripts/Instances/Classes/Deck/Deck.gd"
 }, {
+"base": "Player",
+"class": "Newcomer",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Newcomer.gd"
+}, {
 "base": "Node",
+"class": "Player",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Player.gd"
+}, {
+"base": "Node2D",
 "class": "Scene_Spawner",
 "language": "GDScript",
 "path": "res://Scripts/SceneSpawner.gd"
+}, {
+"base": "Player",
+"class": "Veteran",
+"language": "GDScript",
+"path": "res://Scripts/Instances/Classes/Players/Veteran.gd"
 }, {
 "base": "Node",
 "class": "Village",
@@ -53,9 +73,13 @@ _global_script_class_icons={
 "Card": "",
 "Card_Convert": "",
 "Card_Kill": "",
-"Card_Threat": "",
+"Card_Threat_Newcomer": "",
+"Card_Threat_Veteran": "",
 "Deck": "",
+"Newcomer": "",
+"Player": "",
 "Scene_Spawner": "",
+"Veteran": "",
 "Village": "",
 "Villager": ""
 }
@@ -70,7 +94,7 @@ config/icon="res://icon.png"
 
 ServerData="*res://Scripts/Singletons/ServerData.gd"
 Actions="*res://Scripts/Actions.gd"
-SceneChanger="*res://Scripts/Singletons/Scene_Changer.gd"
+SceneChanger="res://Scripts/Singletons/Scene_Changer.gd"
 
 [rendering]
 

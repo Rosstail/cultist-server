@@ -25,7 +25,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 30, 30 )
+extents = Vector2( 22.3245, 29.2145 )
 
 [node name="Villager" type="KinematicBody2D"]
 input_pickable = true
@@ -35,15 +35,16 @@ script = ExtResource( 10 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
 animation = "idle"
+frame = 3
 playing = true
-offset = Vector2( 0, -6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.04969, 19.5359 )
 shape = SubResource( 2 )
 
-[node name="bubble" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="."]
 visible = false
-scale = Vector2( 0.1, 0.1 )
+position = Vector2( 27.3827, -9.92126 )
+scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 7 )
-offset = Vector2( 200, -200 )
 [connection signal="input_event" from="." to="." method="_on_Town_folk_man_input_event"]

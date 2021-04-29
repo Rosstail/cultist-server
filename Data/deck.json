@@ -2,25 +2,18 @@
 	"cards": [
 		{
 			"kill" : {
-				"title": "Kill",
-				"display": "Collateral Damage",
-				"amount": 10,
-				"target": "npc",
-				"desc": "Select this card and clic on a NPC to KILL it instantly."
+				"amount": 6
 			},
 			"convert" : {
-				"title": "Convert",
-				"display": "If they can't beat you...",
-				"amount": 20,
-				"target": "npc",
-				"desc": "Select this card and clic on a NPC to make the NPC join your cause."
+				"amount": 10
 			},
-			"threat" : {
-				"title": "Threat",
-				"display": "Did I slutter ?",
-				"amount": 30,
-				"target": "npc",
-				"desc": "Select this card and clic on a NPC to increase his fear of your sect."
+			"threat_veteran" : {
+				"amount": 7,
+				"value": 10
+			},
+			"threat_newcomer" : {
+				"amount": 7,
+				"value": 15
 			}
 		}
 	]
