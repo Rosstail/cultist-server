@@ -42,10 +42,10 @@ func _Peer_Disconnected(player_id): #Upon player is disconnected
 remote func FetchCreatePlayer(nick_name, is_veteran, requester):
 	print("fetching")
 	if (ServerData.Veteran == null && is_veteran):
-		Veteran.new(requester, nick_name)
+		ServerData.Veteran = Veteran.new(requester, nick_name)
 		Actions.GenerateVeteranCard()
 	else:
-		Newcomer.new(requester, nick_name)
+		ServerData.Newcomer = Newcomer.new(requester, nick_name)
 		Actions.GenerateNewcomerCard()
 
 remote func FetchCardEffect(card_id, requester):
