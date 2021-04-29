@@ -39,12 +39,3 @@ navpoly = SubResource( 1 )
 
 [node name="Villager" parent="Node2D/Navigation2D" instance=ExtResource( 4 )]
 position = Vector2( 668.174, 374.177 )
-
-[node name="Villager2" parent="Node2D/Navigation2D" instance=ExtResource( 4 )]
-position = Vector2( 479.303, 370.614 )
-
-[node name="Villager3" parent="Node2D/Navigation2D" instance=ExtResource( 4 )]
-position = Vector2( 443.668, 258.361 )
-
-[node name="Villager4" parent="Node2D/Navigation2D" instance=ExtResource( 4 )]
-position = Vector2( 274.397, 571.957 )

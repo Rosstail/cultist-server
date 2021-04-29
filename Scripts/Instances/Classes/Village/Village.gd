@@ -2,7 +2,7 @@ extends Node
 
 class_name Village
 
-var villagers = []
+var villagers = {}
 
 
 # Called when the node enters the scene tree for the first time.
@@ -18,6 +18,6 @@ func _init():
 	var json_villagers = village_data["villagers"][0]
 	var id = 0
 	for villager in json_villagers:
-		#villagers.append(Villager.new(id, json_villagers[villager]))
+		villagers[id] = json_villagers[villager]
 		id = id + 1
 	print(str(villagers.size()) + " villagers generated from json")

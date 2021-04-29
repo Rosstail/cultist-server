@@ -1,13 +1,19 @@
 extends Node
+
 var network = NetworkedMultiplayerENet.new() #Create a new multiplayer network
 var port = 25565 #Port used for connexion
 var max_players = 2 #Maximum players allowed
+var villager= preload("res://scenes/Entities/Villager.tscn")
 
 var rng = RandomNumberGenerator.new()
 
 func _ready(): #When the scene is ready
-	StartServer()
+	var scene_spawner = Scene_Spawner.new()
+	var get_nav = get_node("./Node2D/Navigation2D")
+	for villager in scene_spawner.array_villagers:
+		get_nav.add_child(villager)
 	
+	StartServer()
 	#TO MOVE
 #	var nav = $Node2D/Village/Navigation2D
 #	for villager in ServerData.village_data.villagers:
